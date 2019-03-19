@@ -1,0 +1,19 @@
+{
+  "name": "bitcoin-music",
+  "version": "1.0.0",
+  "description": "translate bitcoin transaction stream to audio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laughingturtle/bitcoin-music.git"
+  },
+  "author": "Malcolm R. Jackson",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/laughingturtle/bitcoin-music/issues"
+  },
+  "homepage": "https://github.com/laughingturtle/bitcoin-music#readme"
+}
