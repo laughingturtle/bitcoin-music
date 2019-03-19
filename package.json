@@ -2,23 +2,44 @@
   "name": "bitcoin-music",
   "version": "1.0.0",
   "description": "translate bitcoin transaction stream to audio",
-  "main": "index.js",
+  "main": "./server/index.js",
+  "author": "Malcolm R. Jackson",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
   "scripts": {
-    "test": "test"
+    "start": "nodemon ./server/index.js localhost 3000",
+    "build": "webpack --mode production --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/laughingturtle/bitcoin-music.git"
   },
-  "author": "Malcolm R. Jackson",
-  "license": "",
   "bugs": {
     "url": "https://github.com/laughingturtle/bitcoin-music/issues"
   },
   "homepage": "https://github.com/laughingturtle/bitcoin-music#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "tone": "^13.4.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.10.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   }
 }
