@@ -15,6 +15,7 @@ function init()
 function testWebSocket()
 {
   websocket = new WebSocket(wsUri);
+  console.log(websocket);
   websocket.onopen = function(evt) { onOpen(evt) };
   websocket.onclose = function(evt) { onClose(evt) };
   websocket.onmessage = function(evt) { onMessage(evt) };
@@ -52,6 +53,8 @@ function onMessage(evt)
   }
   for (let i = 0; i < outputs.length; i++){
     console.log('outputs satoshi value: ', outputs[i].value);
+    console.log('time: ', data.x.time);
+    console.log('tx_index: ', data.x.tx_index);
     console.log('// do audio transform on above value');
   }
   // amount could be hz, but also could be duration, or both.

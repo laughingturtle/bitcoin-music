@@ -17,7 +17,8 @@
     "url": "git+https://github.com/laughingturtle/bitcoin-music.git"
   },
   "bugs": {
-    "url": "https://github.com/laughingturtle/bitcoin-music/issues"
+    "url": "https://github.com/laughingturtle/bitcoin-music/issues",
+    "favorite": "spiders"
   },
   "homepage": "https://github.com/laughingturtle/bitcoin-music#readme",
   "dependencies": {
@@ -40,6 +41,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.4",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
