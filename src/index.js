@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import Ws from 'react-websocket';
 //import mySum from './utils/plusone';
-import BitCoinSocket from './utils/utils'
+//import BitCoinSocket from './utils/utils'
+import satoshiToNote from './utils/satoshiConversion'
 
 class App extends React.Component {
   constructor() {
@@ -10,14 +11,15 @@ class App extends React.Component {
     this.state = {
       // add api datastream
       url: 'wss://ws.blockchain.info/inv/',
-      startNum: 12
+      startNum: 12353453
     }
     //this.bitCoinSocket = this.bitCoinSocket.bind(this);
   }
 
   componentDidMount(){
    // initialize app
-    BitCoinSocket();
+   // BitCoinSocket();
+   satoshiToNote(this.state.startNum);
   }
 
   fetchdata(){
