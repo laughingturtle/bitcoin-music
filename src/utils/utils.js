@@ -3,6 +3,7 @@ export default function BitCoinSocket(){
   var wsUri = "wss://ws.blockchain.info/inv/";
   var output;
   output = document.getElementById("output");
+  var websocket;
   testWebSocket();
 
   function testWebSocket()
@@ -50,8 +51,6 @@ export default function BitCoinSocket(){
       console.log('// do audio transform on above value');
     }
     // amount could be hz, but also could be duration, or both.
-
-
 
   // console.log('data = price value: ', data.x.inputs[0].prev_out.value);
 
