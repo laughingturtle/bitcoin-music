@@ -14,7 +14,7 @@ than the top or bottom ranges.
 */
 
 function findOctave(num) {
-  console.log('num inside findOctave', num);
+ // console.log('num inside findOctave', num);
   var str = num.toString().length;
   if(str <= 2){
     return '1';
