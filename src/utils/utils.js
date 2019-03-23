@@ -28,10 +28,7 @@ export default function BitCoinSocket(){
 
   function onMessage(evt)
   {
-
     var data = JSON.parse(evt.data);
-    //console.log('data = price value: ', data.x.inputs);
-    //console.log('data = price value: ', data.x.inputs[0].prev_out.value);
     console.log('raw data: ', data);
     var inputs = data.x.inputs;
     var outputs = data.x.out;
@@ -50,12 +47,6 @@ export default function BitCoinSocket(){
       console.log('tx_index: ', data.x.tx_index);
       console.log('// do audio transform on above value');
     }
-    // amount could be hz, but also could be duration, or both.
-
-  // console.log('data = price value: ', data.x.inputs[0].prev_out.value);
-
-  // writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data +'</span>');
-  // websocket.close();
   }
 
   function onError(evt)
@@ -76,7 +67,4 @@ export default function BitCoinSocket(){
     pre.innerHTML = message;
     output.appendChild(pre);
   }
-
-  //window.addEventListener("load", init, false);
-
 };
